@@ -1,0 +1,46 @@
+.container {
+  padding: 0 2rem;
+ min-height: 100vh;
+}
+
+.main {
+  padding: 2rem; /* Added padding for better spacing */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stream {
+  display: flex;
+  flex-direction: column; /* Adjusted flex-direction for smaller screens */
+  max-width: 100%; /* Ensuring it doesn't exceed the container's width */
+}
+
+.streamVideo {
+  margin-bottom: 1rem; /* Added margin-bottom for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem; /* Adjusted padding for smaller screens */
+  }
+
+  .main {
+    padding: 1rem; /* Adjusted padding for smaller screens */
+  }
+
+  .stream {
+    flex-direction: column; /* Adjusted flex-direction for smaller screens */
+  }
+
+  .streamVideo {
+    margin-bottom: 1rem; /* Added margin-bottom for better spacing */
+  }
+}
