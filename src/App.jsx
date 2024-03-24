@@ -40,8 +40,8 @@ export default function Home() {
       });
       await channel.watch();
 
-      setChannel(channel);
       setClient(chatClient);
+      setChannel(channel);
     }
 
     init();
@@ -110,7 +110,7 @@ export default function Home() {
       "livestream",
       `mylivestream-replay-${Date.now()}`,
       {
-        name: "My Live Stream",
+        name: "My Live Streamming",
       }
     );
 
@@ -140,7 +140,7 @@ export default function Home() {
       {!user?.id ? (
         <div >
           <h2>Stream</h2>
-          <p>To get started, enter your username or alias:</p>
+          <p>To get started, enter your username</p>
           <form onSubmit={(e) => {
             e.preventDefault();
             const id = Array.from(e.currentTarget.elements).find(({ name }) => name === "userId").value;
