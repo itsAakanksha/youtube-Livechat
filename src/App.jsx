@@ -139,7 +139,7 @@ export default function Home() {
    <div className="main">
       {!user?.id ? (
         <div >
-          <h2>Stream</h2>
+          <h1>Live Chat !</h1>
           <p>To get started, enter your username</p>
           <form onSubmit={(e) => {
             e.preventDefault();
