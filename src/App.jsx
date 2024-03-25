@@ -36,7 +36,7 @@ export default function Home() {
       await chatClient.connectUser(user, chatClient.devToken(user.id));
 
       const channel = chatClient.channel("livestream", "mylivestream", {
-        name: "My Live Stream",
+        name: "Aakanksha live stream",
       });
       await channel.watch();
 
